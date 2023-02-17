@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottomnavigation"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.miconos.love.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_chatFragment"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_homeFragment_to_searchFragment"
+            app:destination="@id/navigation_search" />
+        <action
+            android:id="@+id/action_homeFragment_to_mypageFragment"
+            app:destination="@id/mypageFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_settingFragment"
+            app:destination="@id/settingFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_mypageFragment2"
+            app:destination="@id/mypageFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_chat"
+        android:name="com.miconos.love.ui.chat.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" >
+        <action
+            android:id="@+id/action_chatFragment_to_searchFragment"
+            app:destination="@id/navigation_search" />
+        <action
+            android:id="@+id/action_chatFragment_to_homeFragment"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_chatFragment_to_settingFragment"
+            app:destination="@id/settingFragment" />
+        <action
+            android:id="@+id/action_chatFragment_to_mypageFragment"
+            app:destination="@id/mypageFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.miconos.love.ui.search.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_searchFragment_to_homeFragment"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_searchFragment_to_settingFragment"
+            app:destination="@id/settingFragment" />
+        <action
+            android:id="@+id/action_searchFragment_to_mypageFragment"
+            app:destination="@id/mypageFragment" />
+        <action
+            android:id="@+id/action_searchFragment_to_settingFragment2"
+            app:destination="@id/settingFragment" />
+        <action
+            android:id="@+id/action_searchFragment_to_homeFragment2"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_searchFragment_to_mypageFragment2"
+            app:destination="@id/mypageFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mypageFragment"
+        android:name="com.miconos.love.ui.mypage.MypageFragment"
+        android:label="fragment_mypage"
+        tools:layout="@layout/fragment_mypage" >
+        <action
+            android:id="@+id/action_mypageFragment_to_settingFragment"
+            app:destination="@id/settingFragment" />
+        <action
+            android:id="@+id/action_mypageFragment_to_homeFragment"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_mypageFragment_to_chatFragment"
+            app:destination="@id/navigation_chat" />
+        <action
+            android:id="@+id/action_mypageFragment_to_searchFragment"
+            app:destination="@id/navigation_search" />
+        <action
+            android:id="@+id/action_mypageFragment_to_settingFragment2"
+            app:destination="@id/settingFragment" />
+        <action
+            android:id="@+id/action_mypageFragment_to_settingFragment3"
+            app:destination="@id/settingFragment" />
+        <action
+            android:id="@+id/action_mypageFragment_to_searchFragment2"
+            app:destination="@id/navigation_search" />
+        <action
+            android:id="@+id/action_mypageFragment_to_homeFragment2"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_mypageFragment_to_settingFragment4"
+            app:destination="@id/settingFragment" />
+        <action
+            android:id="@+id/action_mypageFragment_to_settingFragment5"
+            app:destination="@id/settingFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.miconos.love.ui.setting.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" >
+        <action
+            android:id="@+id/action_settingFragment_to_homeFragment"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_settingFragment_to_chatFragment"
+            app:destination="@id/navigation_chat" />
+        <action
+            android:id="@+id/action_settingFragment_to_searchFragment"
+            app:destination="@id/navigation_search" />
+        <action
+            android:id="@+id/action_settingFragment_to_mypageFragment"
+            app:destination="@id/mypageFragment" />
+        <action
+            android:id="@+id/action_settingFragment_to_mypageFragment2"
+            app:destination="@id/mypageFragment" />
+        <action
+            android:id="@+id/action_settingFragment_to_homeFragment2"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_settingFragment_to_searchFragment2"
+            app:destination="@id/navigation_search" />
+        <action
+            android:id="@+id/action_settingFragment_to_searchFragment3"
+            app:destination="@id/navigation_search" />
+        <action
+            android:id="@+id/action_settingFragment_to_homeFragment3"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_settingFragment_to_mypageFragment3"
+            app:destination="@id/mypageFragment" />
+    </fragment>
+
+</navigation>

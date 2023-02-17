@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "22415767146",
+    "project_id": "love-860a9",
+    "storage_bucket": "love-860a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:22415767146:android:195536e4acc6b9093dfc13",
+        "android_client_info": {
+          "package_name": "com.miconos.love"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "22415767146-com773c3kj820qjbg0jnmr895r89piag.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGUOOZ8qShPzHGOU-_tJJTaE1_3KtGe48"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "22415767146-com773c3kj820qjbg0jnmr895r89piag.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
