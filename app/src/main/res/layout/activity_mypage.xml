@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:longClickable="false"
+        android:minHeight="?attr/actionBarSize"
+        android:orientation="horizontal"
+        android:textAlignment="center"
+        android:theme="@style/Theme.Love"
+        android:transitionGroup="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@android:string/untitled"
+        app:titleTextAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:titleTextColor="@color/white">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/title"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="170dp"
+            tools:layout_editor_absoluteY="4dp" />
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:id="@+id/headMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/double_border"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+        <Button
+            android:id="@+id/chatbtn"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:text="@string/chat"
+            android:textColor="@color/txt_gray" />
+        <Button
+            android:id="@+id/footstempsbtn"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:text="@string/footsteps"
+            android:textColor="@color/txt_gray" />
+        <Button
+            android:id="@+id/favoritebtn"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:text="@string/recommend"
+            android:textColor="@color/txt_gray" />
+    </LinearLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/FragmentView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        app:itemIconTint="@color/bottom_navigation"
+        app:itemTextColor="@color/bottom_navigation"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_navigation" />
+
+    <fragment
+        android:id="@+id/bottom_navigation_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="112dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headMenu"
+        app:navGraph="@navigation/bottom_navigation" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

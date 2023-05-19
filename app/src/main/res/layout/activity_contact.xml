@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:longClickable="false"
+        android:minHeight="?attr/actionBarSize"
+        android:orientation="horizontal"
+        android:textAlignment="center"
+        android:theme="@style/Theme.Love"
+        android:transitionGroup="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@android:string/untitled"
+        app:titleTextAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:titleTextColor="@color/white">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/title"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="170dp"
+            tools:layout_editor_absoluteY="4dp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/headMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/double_border"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+        <Button
+            android:id="@+id/chatbtn"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:text="@string/chat"
+            android:textColor="@color/txt_gray" />
+        <Button
+            android:id="@+id/footstempsbtn"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:text="@string/footsteps"
+            android:textColor="@color/txt_gray" />
+        <Button
+            android:id="@+id/favoritebtn"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:text="@string/recommend"
+            android:textColor="@color/txt_gray" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/MenuBox"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/border"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/chat"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/chat"
+            android:textColor="@color/green_txt"
+            android:textSize="10sp"
+            app:backgroundTint="@color/white"
+            app:icon="@drawable/ic_chat"
+            app:iconGravity="textTop"
+            app:iconSize="24dp"
+            app:iconTint="@color/green_btn"
+            tools:ignore="SmallSp" />
+
+        <Button
+            android:id="@+id/search"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/search"
+            android:textColor="@color/green_txt"
+            android:textSize="10sp"
+            app:backgroundTint="@color/white"
+            app:icon="@drawable/ic_search"
+            app:iconGravity="textTop"
+            app:iconSize="24dp"
+            app:iconTint="@color/green_btn"
+            tools:ignore="SmallSp" />
+
+        <Button
+            android:id="@+id/home"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/home"
+            android:textColor="@color/green_txt"
+            android:textSize="10sp"
+            app:backgroundTint="@color/white"
+            app:icon="@drawable/ic_home"
+            app:iconGravity="textTop"
+            app:iconSize="24dp"
+            app:iconTint="@color/green_btn"
+            tools:ignore="SmallSp" />
+
+        <Button
+            android:id="@+id/mypage"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/mypage"
+            android:textColor="@color/green_txt"
+            android:textSize="10sp"
+            app:backgroundTint="@color/white"
+            app:icon="@drawable/ic_account"
+            app:iconGravity="textTop"
+            app:iconSize="24dp"
+            app:iconTint="@color/green_btn"
+            tools:ignore="SmallSp" />
+
+        <Button
+            android:id="@+id/setting"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/setting"
+            android:textColor="@color/green_txt"
+            android:textSize="10sp"
+            app:backgroundTint="@color/white"
+            app:icon="@drawable/ic_settings"
+            app:iconGravity="textTop"
+            app:iconSize="24dp"
+            app:iconTint="@color/green_btn"
+            tools:ignore="SmallSp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

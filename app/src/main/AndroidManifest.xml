@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.miconos.love">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Love"
+        tools:targetApi="31">
+        <activity
+            android:name=".SubActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChatListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OperationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ContactActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InformationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TermActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PrivacyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FavoriteListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FavoriteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FootstempsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MypageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NewsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MessageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AppActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
